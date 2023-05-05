@@ -24,7 +24,9 @@ All the repository is needed.
 
 **EVERYTHING INSIDE `C:\xampp\htdocs` WILL BE DELETED**
 
-Run `.\prestashop-helper.ps1` and everything will be taken care of, except for the PrestaShopException and future assets compilations.
+**AVOID USING IDE INTEGRATED TERMINALS**
+
+Run `.\prestashop-helper.ps1` and everything will be taken care of, except for the PrestaShopException, future assets compilations and installation script `index_cli.php`.
 
 # Manually
 
@@ -45,16 +47,15 @@ Run `.\prestashop-helper.ps1` and everything will be taken care of, except for t
 Run this, modifying parameters as needed
 
 ```
-php .\install-dev\index_cli.php
-
---domain=localhost
---db_server=localhost
---db_name=
---db_user=root
---db_password=
---prefix=
---email=
---password=
+php C:\xampp\htdocs\install-dev\index_cli.php `
+	--domain="localhost" `
+	--db_server="localhost" `
+	--db_name="" `
+	--db_user="root" `
+	--db_password="" `
+	--prefix="" `
+	--email="" `
+	--password=""
 ```
 
 ## Fix PrestaShopException
