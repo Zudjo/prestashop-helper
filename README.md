@@ -2,6 +2,12 @@
 
 This script helps install git-cloned prestashop 8.0.4 repository on windows.
 
+# Automatic
+
+Run `.\prestashop-helper.ps1` and everything will be taken care of, except for the PrestaShopException and future assets compilations.
+
+# Manually
+
 ## Set up XAMPP
 
 1. Install XAMPP with PHP 8.1.17 (link [here](https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.1.17/xampp-windows-x64-8.1.17-0-VS16-installer.exe))
