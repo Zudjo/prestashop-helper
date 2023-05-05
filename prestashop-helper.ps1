@@ -3,7 +3,7 @@ $CurrentPath = $PWD.Path
 
 Remove-Item -Path $XamppPath -Recurse -Force
 
-git clone https://github.com/PrestaShop/PrestaShop.git "C:\xampp\htdocs"
+git clone https://github.com/PrestaShop/PrestaShop.git $XamppPath
 
 .\set-permissions.ps1
 

@@ -1,14 +1,14 @@
-icacls ".\admin-dev\autoupgrade" /grant Everyone:F /t /c /q
-icacls ".\app\config" /grant Everyone:F /t /c /q
-icacls ".\cache" /grant Everyone:F /t /c /q
-icacls ".\config" /grant Everyone:F /t /c /q
-icacls ".\download" /grant Everyone:F /t /c /q
-icacls ".\img" /grant Everyone:F /t /c /q
-icacls ".\log" /grant Everyone:F /t /c /q
-icacls ".\mails" /grant Everyone:F /t /c /q
-icacls ".\modules" /grant Everyone:F /t /c /q
-icacls ".\override" /grant Everyone:F /t /c /q
-icacls ".\themes" /grant Everyone:F /t /c /q
-icacls ".\translations" /grant Everyone:F /t /c /q
-icacls ".\upload" /grant Everyone:F /t /c /q
-icacls ".\var" /grant Everyone:F /t /c /q
+icacls $XamppPath + ".\admin-dev\autoupgrade" /grant Everyone:F /t /c /q
+icacls $XamppPath + ".\app\config" /grant Everyone:F /t /c /q
+icacls $XamppPath + ".\cache" /grant Everyone:F /t /c /q
+icacls $XamppPath + ".\config" /grant Everyone:F /t /c /q
+icacls $XamppPath + ".\download" /grant Everyone:F /t /c /q
+icacls $XamppPath + ".\img" /grant Everyone:F /t /c /q
+icacls $XamppPath + ".\log" /grant Everyone:F /t /c /q
+icacls $XamppPath + ".\mails" /grant Everyone:F /t /c /q
+icacls $XamppPath + ".\modules" /grant Everyone:F /t /c /q
+icacls $XamppPath + ".\override" /grant Everyone:F /t /c /q
+icacls $XamppPath + ".\themes" /grant Everyone:F /t /c /q
+icacls $XamppPath + ".\translations" /grant Everyone:F /t /c /q
+icacls $XamppPath + ".\upload" /grant Everyone:F /t /c /q
+icacls $XamppPath + ".\var" /grant Everyone:F /t /c /q
