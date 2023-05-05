@@ -1,12 +1,8 @@
 # Prestashop helper
 
-This script helps install git-cloned prestashop 8.0.4 repository on windows.
+These scripts help install git-cloned prestashop 8.0.4 repository on windows.
 
-# Automatic
-
-Run `.\prestashop-helper.ps1` and everything will be taken care of, except for the PrestaShopException and future assets compilations.
-
-# Manually
+**All commands and scripts are to be ran with administrator rights.**
 
 ## Set up XAMPP
 
@@ -18,11 +14,25 @@ Run `.\prestashop-helper.ps1` and everything will be taken care of, except for t
 
 4. Create the database that will be used by Prestashop
 
+## Clone the repository
+
+Run `git clone https://github.com/Zudjo/prestashop-helper.git` where you prefer, all paths are absolute.
+
+All the repository is needed.
+
+# Automatic
+
+**EVERYTHING INSIDE `C:\xampp\htdocs` WILL BE DELETED**
+
+Run `.\prestashop-helper.ps1` and everything will be taken care of, except for the PrestaShopException and future assets compilations.
+
+# Manually
+
 ## Set up Prestashop
 
 1. Empty the `C:\xampp\htdocs` folder and run `git clone https://github.com/PrestaShop/PrestaShop.git "C:\xampp\htdocs"`
 
-2. Run `icacls * /grant Everyone:F` (**DON'T RUN THIS IN PRODUCTION** - for more details read [here](https://devdocs.prestashop-project.org/8/basics/installation/localhost/#setting-up-file-rights) )
+2. Run `.\set-permissions.ps1`
 
 3. Run `composer install`
 
