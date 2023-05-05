@@ -1,4 +1,5 @@
 $XamppPath = "C:\xampp\htdocs\"
+$CurrentPath = $PWD.Path
 
 $DefaultTheme = $XamppPath + "admin-dev\themes\default"
 $NewTheme = $XamppPath + "admin-dev\themes\new-theme"
@@ -35,3 +36,5 @@ New-Assets($DefaultTheme)
 New-Assets($NewTheme)
 New-Assets($FOCore)
 New-Assets($ClassicTheme)
+
+Set-Location $CurrentPath
