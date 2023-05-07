@@ -26,7 +26,7 @@ All the repository is needed.
 
 **AVOID USING IDE INTEGRATED TERMINALS**
 
-Run `.\prestashop-helper.ps1` and everything will be taken care of, except for the PrestaShopException, future assets compilations and installation script `index_cli.php`.
+Run `.\prestashop-helper.ps1` and everything will be taken care of, except for the PrestaShopException, assets compilation and installation script `index_cli.php`.
 
 # Manually
 

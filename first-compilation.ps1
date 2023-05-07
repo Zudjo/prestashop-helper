@@ -6,14 +6,26 @@ $NewTheme = $XamppPath + "admin-dev\themes\new-theme"
 $FOCore = $XamppPath + "themes"
 $ClassicTheme = $XamppPath + "themes\classic\_dev"
 
+function Write-Info {
+    param (
+        $Info
+    )
+
+    Write-Host ""
+    Write-Host "---------------"
+    Write-Host $Info
+    Write-Host "---------------"
+    Write-Host ""
+}
+
 function New-Assets {
 
     param(
         $path
     )
 
+    Write-Info -Info "Compiling assets in $path..."
     Set-Location $path
-    npm install
     npm run build
 }
 
@@ -23,6 +35,7 @@ function Install-Npm {
         $path
     )
 
+    Write-Info -Info "Running 'npm install' in $path..."
     Set-Location $path
     npm install
 }
